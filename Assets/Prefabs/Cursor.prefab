@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 2320957188150548665}
   - component: {fileID: 5842265564592122383}
   m_Layer: 0
-  m_Name: Spotlight
+  m_Name: Cursor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -5,34 +5,36 @@ using UnityEngine.InputSystem;
 
 public class InputController : MonoBehaviour
 {
-    public int yOffset;
-    public Transform spotlightTransform;
-    [SerializeField] private InputActionReference mouse;
-    [SerializeField] private LayerMask _mask;
-    private Camera _cam;
+    
+    [SerializeField] private InputActionReference mousePosition;
+    [SerializeField] private InputActionReference mouseButtonDown;
 
- private void Start()
+    public static InputController Instance
     {
-        _cam = Camera.main;
+        get; private set;
     }
 
-    // Update is called once per frame
-    void Update()
+    public Vector2 MousePosition
     {
-        Vector3 mousePos = mouse.action.ReadValue<Vector2>();
-        mousePos.z = 100f;
+        get { return mousePosition.action.ReadValue<Vector2>(); }
+    }
 
-        Vector3 testMousePos = _cam.ScreenToWorldPoint(mousePos);
-        Debug.DrawRay(_cam.transform.position, testMousePos - _cam.transform.position, Color.blue);
+    public bool MouseButtonDown
+    {
+        get { return mouseButtonDown.action.WasPressedThisFrame(); }
+    }
 
-        Ray ray = _cam.ScreenPointToRay(mouse.action.ReadValue<Vector2>());
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit, 10f, _mask))
+    private void Awake()
+    {
+        if (Instance == null)
         {
-            Vector3 spotlightPosition = new Vector3(hit.point.x, spotlightTransform.position.y, hit.point.z);
-            spotlightTransform.position = spotlightPosition;
-            Debug.Log(hit.transform.name);
-        } 
-        //Debug.Log(mouse.action.ReadValue<Vector2>());
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
+
+

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3157887715660295439}
   - component: {fileID: 8154413083723014593}
   m_Layer: 7
-  m_Name: MapPoint
+  m_Name: Pin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -67,7 +67,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 932e55ddcae72674baf901dc3b831802, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 308900543122518020}
+  _anim: {fileID: 308900543122518020}
 --- !u!1 &6907414921337951189
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,7 +81,7 @@ GameObject:
   - component: {fileID: 8137812564916958100}
   - component: {fileID: 308900543122518020}
   m_Layer: 0
-  m_Name: Pin
+  m_Name: PinVisuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

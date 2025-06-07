@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LogicHandler : MonoBehaviour
+public class MapController : MonoBehaviour
 {
     [SerializeField] private GameObject plane;              // The plane GameObject
     [SerializeField] private GameObject objectPrefab;       // Prefab to instantiate

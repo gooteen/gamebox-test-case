@@ -2,19 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MapPointController : MonoBehaviour
+public class PinController : MonoBehaviour
 {
-    public Animator anim;
-    // Start is called before the first frame update
+    [SerializeField] private Animator _anim;
 
     private void OnTriggerEnter(Collider other)
     {
-        anim.SetBool("IsHighlighted", true);
+        _anim.SetBool("IsHighlighted", true);
         Debug.Log("sds");
     }
 
     public void OnTriggerExit(Collider other)
     {
-        anim.SetBool("IsHighlighted", false);
+        _anim.SetBool("IsHighlighted", false);
     }
 }
