@@ -13,7 +13,19 @@ MonoBehaviour:
   m_Name: GameContentConfigurator
   m_EditorClassIdentifier: 
   suspects:
-  - name: 
+  - name: "\u0414\u0436\u043E\u043D \u0414\u043E\u0443"
+    description: 
+    image: 
+  - name: "\u042D\u043B\u0435\u043E\u043D\u043E\u0440\u0430 \u0420\u0438\u0433\u0431\u0438"
+    description: 
+    image: 
+  - name: "\u0412\u043B\u0430\u0434\u0438\u043C\u0438\u0440 \u0425\u0430\u0440\u043A\u043E\u043D\u043D\u0435\u043D"
+    description: 
+    image: 
+  - name: "\u041F\u0451\u0442\u0440 \u041F\u0435\u0442\u0440\u043E\u0432"
+    description: 
+    image: 
+  - name: "\u0410\u043B\u0435\u043A\u0441 \u0413\u0440\u0435\u0439"
     description: 
     image: 
   locations:

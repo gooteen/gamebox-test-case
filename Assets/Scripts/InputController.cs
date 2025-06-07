@@ -24,7 +24,7 @@ public class InputController : MonoBehaviour
         get { return mouseButtonDown.action.WasPressedThisFrame(); }
     }
 
-    private void Awake()
+    void Awake()
     {
         if (Instance == null)
         {

@@ -9,13 +9,11 @@ public class CursorController : MonoBehaviour
 
     private Camera _cam;
 
-    // Start is called before the first frame update
     void Start()
     {
         _cam = Camera.main;
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 mousePos = InputController.Instance.MousePosition;
@@ -37,6 +35,5 @@ public class CursorController : MonoBehaviour
         {
             Debug.Log("HEY"); 
         }
-        //Debug.Log(mouse.action.ReadValue<Vector2>());
     }
 }
