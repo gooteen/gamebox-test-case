@@ -5,12 +5,12 @@ using UnityEngine;
 public class PinController : MonoBehaviour
 {
     [SerializeField] private Animator _anim;
-    private string _suspectName;
+    private int _suspectIndex;
     private int _level;
 
-    public string SuspectName
+    public int SuspectIndex
     {
-        set { _suspectName = value; }
+        set { _suspectIndex = value; }
     }
     
     public int Level
@@ -21,12 +21,14 @@ public class PinController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         _anim.SetBool("IsHighlighted", true);
-        UIController.Instance.ShowDataPanel(_suspectName, _level);
+        UIController.Instance.ShowDataPanel(_suspectIndex, _level);
+        UIController.Instance.UpdateCursor(true);
     }
 
     public void OnTriggerExit(Collider other)
     {
         _anim.SetBool("IsHighlighted", false);
         UIController.Instance.HideDataPanel();
+        UIController.Instance.UpdateCursor(false);
     }
 }

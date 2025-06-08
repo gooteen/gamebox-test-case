@@ -29,7 +29,7 @@ public class MapController : MonoBehaviour
 
         for (int i = 0; i < _pins.Count; i++)
         {
-            _pins[i].SuspectName = GameController.Instance.GameContent.suspects[i].name;
+            _pins[i].SuspectIndex = i; // Quick solution - better replace with a proper item id later
             _pins[i].Level = 1; // Temporary hardcode
         }
     }
