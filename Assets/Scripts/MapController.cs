@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class MapController : MonoBehaviour
 {
-    [SerializeField] private GameObject _pinsSpawnArea;              // Area to generate map points (pins) on
-    [SerializeField] private GameObject _pinPrefab;       // Prefab to instantiate
+    [SerializeField] private GameObject _pinsSpawnArea;         // Area to generate map points (pins) on
+    [SerializeField] private GameObject _pinPrefab;       
     [SerializeField] private int _numberOfObjectsFrom = 3;
     [SerializeField] private int _numberOfObjectsTo = 5;
-    [SerializeField] private float _yOffset = 0.5f;          // Offset above the plane
+    [SerializeField] private float _yOffset = 0.5f;         // Offset above the plane
     [SerializeField] private float _pinGap = 0.5f;          // Minimal distance between pins
 
     private List<PinController> _pins = new List<PinController>();
@@ -32,7 +32,7 @@ public class MapController : MonoBehaviour
             _pins[i].SuspectIndex = i; // Quick solution - better replace with a proper item id later
             _pins[i].Level = 1; // Temporary hardcode
         }
-    }
+    }   
 
     private void ClearMap()
     {

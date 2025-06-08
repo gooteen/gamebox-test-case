@@ -21,14 +21,16 @@ public class PinController : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         _anim.SetBool("IsHighlighted", true);
+        GameController.Instance.IsLevelSelected = true;
         UIController.Instance.ShowDataPanel(_suspectIndex, _level);
-        UIController.Instance.UpdateCursor(true);
+        UIController.Instance.UpdateCursor(true);           // MVP logic, better to update currently selected map point instance later 
     }
 
     public void OnTriggerExit(Collider other)
     {
         _anim.SetBool("IsHighlighted", false);
+        GameController.Instance.IsLevelSelected = false;
         UIController.Instance.HideDataPanel();
-        UIController.Instance.UpdateCursor(false);
+        UIController.Instance.UpdateCursor(false);          // MVP logic, better to update currently selected map point instance later
     }
 }

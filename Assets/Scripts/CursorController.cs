@@ -30,10 +30,5 @@ public class CursorController : MonoBehaviour
             transform.position = spotlightPosition;
             Debug.Log(hit.transform.name);
         }
-
-        if (InputController.Instance.MouseButtonDown)
-        {
-            Debug.Log("HEY"); 
-        }
     }
 }

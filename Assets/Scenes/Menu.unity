@@ -576,13 +576,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2091963857326168416, guid: 0fd6d10f06fe9344e868accb6815d7d1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2091963857326168416, guid: 0fd6d10f06fe9344e868accb6815d7d1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1660309161}
+      objectReference: {fileID: 1835189943}
     - target: {fileID: 2091963857326168416, guid: 0fd6d10f06fe9344e868accb6815d7d1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1835189943}
+    - target: {fileID: 2091963857326168416, guid: 0fd6d10f06fe9344e868accb6815d7d1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 2091963857326168416, guid: 0fd6d10f06fe9344e868accb6815d7d1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2091963857326168416, guid: 0fd6d10f06fe9344e868accb6815d7d1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2094080645622985882, guid: 0fd6d10f06fe9344e868accb6815d7d1, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 93.2
@@ -2182,6 +2198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameContent: {fileID: 11400000, guid: dd294370d3c2b3549a464310f00cfd60, type: 2}
+  _map: {fileID: 1660309161}
 --- !u!4 &1835189944
 Transform:
   m_ObjectHideFlags: 0
