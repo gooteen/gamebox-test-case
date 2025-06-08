@@ -24,6 +24,7 @@ public class PinController : MonoBehaviour
         GameController.Instance.IsLevelSelected = true;
         UIController.Instance.ShowDataPanel(_suspectIndex, _level);
         UIController.Instance.UpdateCursor(true);           // MVP logic, better to update currently selected map point instance later 
+        SoundController.Instance.PlayEffect("pop");
     }
 
     public void OnTriggerExit(Collider other)

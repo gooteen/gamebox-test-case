@@ -77,6 +77,7 @@ public class GameController : MonoBehaviour
                 UIController.Instance.UpdateCursor(false);
                 UIController.Instance.HideDataPanel();
                 IncrementCurrentDate();
+                SoundController.Instance.PlayEffect("click");
             }
         }
     }
