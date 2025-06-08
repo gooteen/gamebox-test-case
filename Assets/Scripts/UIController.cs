@@ -6,6 +6,8 @@ using TMPro;
 
 public class UIController : MonoBehaviour
 {
+    [SerializeField] private bool _isMap;
+
     [SerializeField] private GameObject _hintPanel;
     [SerializeField] private GameObject _dataPanel;
     [SerializeField] private Image _suspectAvatar;
@@ -32,9 +34,13 @@ public class UIController : MonoBehaviour
 
     void Start()
     {
-        UpdateDateUI();
-        GameController.Instance.onDateValueUpdate += UpdateDateUI;
-        HideDataPanel();
+        UpdateCursor(false);
+        if (_isMap)
+        {
+            UpdateDateUI();
+            GameController.Instance.onDateValueUpdate += UpdateDateUI;
+            HideDataPanel();
+        }
     }
 
     void Update()

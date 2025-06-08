@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 
 
@@ -44,6 +45,11 @@ public class GameController : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void ToNotebook()
+    {
+        SceneManager.LoadScene("Notebook");
     }
 
     void Awake()

@@ -824,6 +824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 810438ebbd5ee5447a0e9b891b630d36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _isMap: 1
   _hintPanel: {fileID: 1436091839}
   _dataPanel: {fileID: 1015153209}
   _suspectAvatar: {fileID: 1311959643}
@@ -1475,7 +1476,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0418\u0441\u0441\u043B\u0435\u0434\u0443\u0439\u0442\u0435 \u043E\u0442\u043C\u0435\u0447\u0435\u043D\u043D\u044B\u0435
+  m_text: "\u041F\u043E\u0441\u0435\u0449\u0430\u0439\u0442\u0435 \u043E\u0442\u043C\u0435\u0447\u0435\u043D\u043D\u044B\u0435
     \u043D\u0430 \u043A\u0430\u0440\u0442\u0435 \u0442\u043E\u0447\u043A\u0438, \u0447\u0442\u043E\u0431\u044B
     \u043F\u0440\u043E\u0434\u0432\u0438\u043D\u0443\u0442\u044C\u0441\u044F \u0432
     \u0440\u0430\u0441\u0441\u043B\u0435\u0434\u043E\u0432\u0430\u043D\u0438\u0438."
@@ -1766,13 +1767,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2091963857326168416, guid: 0fd6d10f06fe9344e868accb6815d7d1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2091963857326168416, guid: 0fd6d10f06fe9344e868accb6815d7d1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1660309161}
+      objectReference: {fileID: 1835189943}
     - target: {fileID: 2091963857326168416, guid: 0fd6d10f06fe9344e868accb6815d7d1, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 1835189943}
+    - target: {fileID: 2091963857326168416, guid: 0fd6d10f06fe9344e868accb6815d7d1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToNotebook
+      objectReference: {fileID: 0}
+    - target: {fileID: 2091963857326168416, guid: 0fd6d10f06fe9344e868accb6815d7d1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2091963857326168416, guid: 0fd6d10f06fe9344e868accb6815d7d1, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 2094080645622985882, guid: 0fd6d10f06fe9344e868accb6815d7d1, type: 3}
       propertyPath: m_SizeDelta.x
       value: 208.6446

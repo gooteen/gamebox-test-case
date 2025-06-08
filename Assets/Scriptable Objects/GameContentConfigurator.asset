@@ -16,7 +16,7 @@ MonoBehaviour:
   - name: "\u0414\u0436\u0435\u0439\u043D \u0414\u043E\u0443"
     description: 
     image: Sprites/Suspects/jane
-  - name: "\u042D\u043B\u0435\u043E\u043D\u043E\u0440\u0430 \u0420\u0438\u0433\u0431\u0438"
+  - name: "\u042D\u043B\u0435\u0430\u043D\u043E\u0440 \u0420\u0438\u0433\u0431\u0438"
     description: 
     image: Sprites/Suspects/eleanor
   - name: "\u0412\u043B\u0430\u0434\u0438\u043C\u0438\u0440 \u0425\u0430\u0440\u043A\u043E\u043D\u043D\u0435\u043D"
@@ -29,13 +29,22 @@ MonoBehaviour:
     description: 
     image: Sprites/Suspects/alex
   locations:
-  - name: 
+  - name: "\u041F\u0430\u0440\u043A"
+    description: 
+    image: 
+  - name: "\u041E\u0442\u0435\u043B\u044C"
+    description: 
+    image: 
+  - name: "\u041B\u0435\u0441"
     description: 
     image: 
   events:
-  - name: 
+  - name: "\u041A\u0440\u0430\u0436\u0430"
     description: 
     image: 
-  - name: 
+  - name: "\u0423\u0431\u0438\u0439\u0441\u0442\u0432\u043E"
+    description: 
+    image: 
+  - name: "\u041F\u043E\u043A\u0443\u0448\u0435\u043D\u0438\u0435"
     description: 
     image: 
